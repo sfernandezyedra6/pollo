@@ -7,9 +7,13 @@ public class gemaScript : MonoBehaviour {
 	void Start () {
 	
 	}
+
+	void update () {
+		}
+
+	void OnTriggerEnter2D (Collider2D other) {
+		if(other.transform.tag=="Player") 
+				Application.LoadLevel ("nivel02");
+		}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
